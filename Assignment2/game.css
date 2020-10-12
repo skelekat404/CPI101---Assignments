@@ -1,0 +1,22 @@
+table, th, td {
+    border: 2px solid black;
+    border-collapse: collapse;
+    border-width: medium;
+    border-style: double;
+    font-weight: 100;
+}
+th, td {
+  padding: 5px;
+}
+th {
+  text-align: left;
+}
+table
+{
+    border-spacing: 10px;
+    background: white;
+}
+body
+{
+    background: lightblue;
+}
