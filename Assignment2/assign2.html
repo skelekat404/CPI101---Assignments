@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <script language="JavaScript" src="game.js"></script>
+        <script>
+            var name = window.prompt("please enter your name");
+            document.write("<h1>" +name + ", Welcome to play Paper Scissors Rock game!</h1>");
+
+
+        </script>
+        <link rel="stylesheet" type="text/css" href="game.css">
+        <title>rock paper scissors game</title>
+    </head>
+    <body>
+
+        <table style="width:50%">
+            <tr>
+                <td>Your Selection:</td>
+                <th></th>
+                <td>Computer</td>
+            </tr>
+            <tr>
+                <td>    <input type="radio" id="paper" name="choice" value="Paper" onclick="checkInput()">
+                        <label for="paper">Paper</label><br>
+                        <input type="radio" id="scissors" name="choice" value="Scissors" onclick="checkInput()">
+                        <label for="scissors">Scissors</label><br>
+                        <input type="radio" id="rock" name="choice" value="Rock" onclick="checkInput()">
+                        <label for="rock">Rock</label></td>
+                <td><form><input type="button" value="Go!" onclick="play()"></form></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>You selected: </td>
+                <th colspan="2"><div id="playerSelection"> </div>
+                </th>
+
+            </tr>
+            <tr>
+                <td>Computer randomly generated:</td>
+                <th colspan="2"><div id="randomSelection"> </div></th>
+
+            </tr>
+        </table>
+        <br>
+        <table>
+            <tr>
+                <td>Times you have played:<p id="gameCounter"></p></td>
+                <td>Times you have chosen scissors:<p id="scissorsCounter"></p></td>
+                <td>Times you have chosen rock:<p id="rockCounter"></p></td>
+                <td>Times you have chosen paper:<p id="paperCounter"></p></td>
+                <td>Results: <p id="place"></p></td>
+            </tr>
+        </table>
+
+
+    </body>
+
+
+</html>
