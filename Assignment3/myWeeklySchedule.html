@@ -1,0 +1,103 @@
+<html>
+    <head>
+        <title>Data Visualization</title>
+        <script src="https://d3js.org/d3.v3.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body style="background-color: lightgrey">
+        <p id="avg_title">WEEKLY SCHEDULE</p>
+        <svg width="1200" height="500">
+            <!--  rx = width, ry = height-->
+            <text x="10" y="42" font-family="Verdana" font-size="15" fill="#000000">Increase: </text>
+            <rect x= "95" y="26" width="110" height="22" style="fill: #22B20E;"></rect>
+            <text x="400" y="42" font-family="Verdana" font-size="15" fill="#000000">Decrease: </text>
+            <rect x= "490" y="26" width="110" height="22" style="fill: #F52323;"></rect>
+            <!-- MONDAY -->
+            <text x="10" y="102" font-family="Verdana" font-size="15" fill="#000000">Monday: </text>
+            <ellipse cx="220" cy="100" rx="140" ry="20" style="fill: yellow" />
+            <text x="190" y="105" font-family="Verdana" font-size="20" fill="#DCBD16">Sleep</text>
+            <ellipse cx="380" cy="100" rx="20" ry="20" style="fill: red" />
+            <ellipse cx="440" cy="100" rx="40" ry="20" style="fill: blue" />
+            <ellipse cx="580" cy="100" rx="100" ry="20" style="fill: green" />
+            <ellipse cx="740" cy="100" rx="60" ry="20" style="fill: orange" />
+            <ellipse cx="920" cy="100" rx="120" ry="20" style="fill: purple" />
+            <!-- TUESDAY -->
+            <text x="10" y="164" font-family="Verdana" font-size="15" fill="#000000">Tuesday: </text>
+            <ellipse cx="240" cy="160" rx="160" ry="20" style="fill: yellow" /> 
+            <ellipse cx="420" cy="160" rx="20" ry="20" style="fill: red" />
+            <text x="408" y="163" font-family="Verdana" font-size="15" fill="maroon">Eat</text>
+            <ellipse cx="460" cy="160" rx="20" ry="20" style="fill: blue" />
+            <ellipse cx="0" cy="0" rx="0" ry="0" style="fill: green" />
+            <ellipse cx="640" cy="160" rx="160" ry="20" style="fill: orange" />
+            <ellipse cx="920" cy="160" rx="120" ry="20" style="fill: purple" />
+            <!-- WEDNESDAY -->
+            <text x="0" y="223" font-family="Verdana" font-size="13" fill="#000000">Wednesday: </text>
+            <ellipse cx="220" cy="220" rx="140" ry="20" style="fill: yellow" /> 
+            <ellipse cx="380" cy="220" rx="20" ry="20" style="fill: red" />
+            <ellipse cx="440" cy="220" rx="40" ry="20" style="fill: blue" />
+            <ellipse cx="580" cy="220" rx="100" ry="20" style="fill: green" />
+            <ellipse cx="740" cy="220" rx="60" ry="20" style="fill: orange" />
+            <ellipse cx="920" cy="220" rx="120" ry="20" style="fill: purple" />
+            <rect x= "870" y="208" width="110" height="22" style="fill: #F52323;"></rect>
+            <text x="870" y="225" font-family="Verdana" font-size="20" fill="#170446">Homework</text>
+            <!-- THURSDAY -->
+            <text x="0" y="283" font-family="Verdana" font-size="15" fill="#000000">Thursday: </text>
+            <ellipse cx="240" cy="280" rx="160" ry="20" style="fill: yellow" /> 
+            <ellipse cx="420" cy="280" rx="20" ry="20" style="fill: red" />
+            <ellipse cx="500" cy="280" rx="60" ry="20" style="fill: blue" />
+            <ellipse cx="0" cy="0" rx="0" ry="0" style="fill: green" />
+            <ellipse cx="660" cy="280" rx="100" ry="20" style="fill: orange" />
+            <text x="635" y="285" font-family="Verdana" font-size="20" fill="#C07431">Class</text>
+            <ellipse cx="900" cy="280" rx="140" ry="20" style="fill: purple" />
+            <!-- FRIDAY -->
+            <text x="17" y="343" font-family="Verdana" font-size="15" fill="#000000">Friday: </text>
+            <ellipse cx="260" cy="340" rx="180" ry="20" style="fill: yellow" /> 
+            <ellipse cx="460" cy="340" rx="20" ry="20" style="fill: red" />
+            <ellipse cx="640" cy="340" rx="160" ry="20" style="fill: blue" />
+            <rect x= "580" y="328" width="125" height="23" style="fill: #22B20E;"></rect>
+            <text x="580" y="345" font-family="Verdana" font-size="20" fill="#0B0A74">Videogames</text>
+            <ellipse cx="900" cy="340" rx="100" ry="20" style="fill: green" />
+            <ellipse cx="0" cy="0" rx="0" ry="0" style="fill: orange" />
+            <ellipse cx="1020" cy="340" rx="20" ry="20" style="fill: purple" />
+            <!-- SATURDAY -->
+            <text x="4" y="403" font-family="Verdana" font-size="15" fill="#000000">Saturday: </text>
+            <ellipse cx="240" cy="400" rx="160" ry="20" style="fill: yellow" /> 
+            <ellipse cx="420" cy="400" rx="20" ry="20" style="fill: red" />
+            <ellipse cx="500" cy="400" rx="60" ry="20" style="fill: blue" />
+            <ellipse cx="720" cy="400" rx="160" ry="20" style="fill: green" />
+            <text x="692" y="405" font-family="Verdana" font-size="20" fill="#14510F">Work</text>
+            <ellipse cx="0" cy="0" rx="0" ry="0" style="fill: orange" />
+            <ellipse cx="960" cy="400" rx="80" ry="20" style="fill: purple" />
+            <!-- SUNDAY -->
+            <text x="12" y="463" font-family="Verdana" font-size="15" fill="#000000">Sunday: </text>
+            <ellipse cx="260" cy="460" rx="180" ry="20" style="fill: yellow" /> 
+            <ellipse cx="460" cy="460" rx="20" ry="20" style="fill: red" />
+            <ellipse cx="580" cy="460" rx="100" ry="20" style="fill: blue" />
+            <ellipse cx="0" cy="0" rx="0" ry="0" style="fill: green" />
+            <ellipse cx="0" cy="0" rx="0" ry="0" style="fill: orange" />
+            <ellipse cx="860" cy="460" rx="180" ry="20" style="fill: purple" />
+        </svg>
+        <p id="avg_title">CALCULATED AVERAGES</p>
+        <script>
+            var sleep = 56;
+            var eat = 7;
+            var videogames = 24;
+            var work = 23;
+            var classes = 19;
+            var homework = 39;
+            var newline = "\n"; 
+            //toFixed is to add a decimal format
+            document.writeln("Average sleep/week: " + (sleep / 7).toFixed(2) );
+            document.write("<br>");
+            document.writeln("Average eat/week: " + (eat / 7).toFixed(2));
+            document.write("<br>");
+            document.writeln("Average videogames/week: " + (videogames / 7).toFixed(2));
+            document.write("<br>");
+            document.writeln("Average work/week: " + (work / 7).toFixed(2));
+            document.write("<br>");
+            document.writeln("Average classes/week: " + (classes / 7).toFixed(2));
+            document.write("<br>");
+            document.writeln("Average homework/week: " + (homework / 7).toFixed(2));
+        </script>
+    </body>
+</html>
